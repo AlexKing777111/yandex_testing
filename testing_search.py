@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 
 class YandexSearch(unittest.TestCase):
     def setUp(self):
+        # В executable_path укажите путь к файлу geckodriver.exe
         self.driver = webdriver.Firefox(
             executable_path=r"D:\Dev\yandex_testing\geckodriver.exe"
         )
